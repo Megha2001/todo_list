@@ -16,7 +16,13 @@ class _TaskListState extends State<TaskList> {
       backgroundColor:Color(0xffF8D2D2),
       appBar: AppBar(
         backgroundColor: Color(0xffE2858B),
-        title: Text('To Do List'),
+        title: Text('Tasks',
+        style: TextStyle(
+            fontFamily: 'Revalia',
+          fontWeight: FontWeight.bold,
+          fontSize: 25,
+        ),
+        ),
         centerTitle: true,
       ),
       body: Container(
@@ -56,11 +62,15 @@ class _TaskListState extends State<TaskList> {
                 icon: Icon(
                   Icons.add,
                   color: Colors.black,
+                  size: 27,
                 ),
                 label: Text(
                   'Add a task',
                   style: TextStyle(
                     color: Colors.black,
+                    fontFamily: 'Revalia',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
                   ),
                 ),
                 color: Color(0xffEA969B),

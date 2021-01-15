@@ -16,11 +16,18 @@ class _HomeWidgetState extends State<HomeWidget> {
           mainAxisAlignment: MainAxisAlignment.center,
           children:
           [
-            Image.asset('assets/images/pic1.jpg',
+            Image.asset('assets/images/logo.jpg',
               fit: BoxFit.contain,
               height: 32,),
+            SizedBox(width: 5),
             Container(
-                padding: const EdgeInsets.all(8.0), child: Text('Compito'))
+                padding: const EdgeInsets.all(8.0), child: Text('Compito',
+            style: TextStyle(
+                fontFamily: 'Revalia',
+              fontWeight: FontWeight.bold,
+              fontSize: 25,
+            ),
+            ))
           ],
         ),
       ),
